@@ -665,7 +665,7 @@ html {
   background-size: contain;
   background-clip: border-box;
   background-position: center;
-  background-image: url(assets/svg/hotdogNavIcon.svg);
+  background-image: url('../../assets/svg/hotdogNavIcon.svg');
 }
 
 /* custom card */
