@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+@layer base{
+  /* Smooth scroll within page */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components{
+  /* Custom navigation icon */
+  #hotdogNavIcon{
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: border-box;
+    background-position: center;
+    background-image: url(../../assets/svg/hotdogNavIcon.svg);
+  }
+
+   /* custom card */
+  .card-deck{
+    @apply flex flex-wrap justify-center items-center my-20 gap-8;
+  }
+
+  .card{
+  @apply flex flex-col drop-shadow-lg bg-gray-50 p-5 rounded space-y-5 max-w-[18rem];
+  }
+
+  .card-img {
+  @apply  text-[5rem] md:text-8xl mx-auto text-primary opacity-90;
+  }
+
+  .card-title{ 
+  @apply  font-heading text-2xl font-medium opacity-90 text-center;
+  }
+
+  .card-info{
+  @apply  font-body leading-7 opacity-90;
+  }
+
+  /* Custom container breakpoints */
+  .container-sm{
+    max-width: 640px;
+  }
+
+  .container-md{
+    max-width: 768px;
+  }
+
+  .container-lg{
+    max-width: 1024px;
+  }
+
+
+  .container-xl{
+    max-width: 1280px;
+  }
+
+  .container-2xl{
+    max-width: 1536px;
+  }
+
+  /* custom form style*/
+  .form-group{
+    @apply flex flex-col md:flex-row items-start gap-x-5 justify-start space-y-10 md:space-y-0;
+  }
+
+  .form-item{
+    @apply form-input h-full w-full block p-3 rounded-md focus:ring-0 border-secondary-dark focus:border-primary-light;
+  }
+
+  .form-item-area{
+    @apply h-24 form-textarea border-secondary-dark focus:ring-0 focus:border-primary-light;
+  }
+
+  .form-submit{
+    @apply mt-5 w-max p-2 text-secondary bg-primary font-body font-medium px-8 rounded hover:bg-primary-dark transition-all duration-300;
+  }
+
+  .form-required::after{
+    content: '1235';
+  }
+
+}
+
+/* Custom navigation icon active style*/
+nav .opened{
+  border: 1.5px solid #000000;
+}
+
+/* active nav link */
+nav .active{
+  @apply opacity-95;
+}
+

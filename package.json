@@ -1,0 +1,22 @@
+{
+  "name": "Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-tailwind": "npx tailwind -i ./src/styles.css -o ./Public/css/tailwind/styles.css --watch",
+    "build-tailwind": "npx tailwind -i ./src/styles.css -o ./Public/css/tailwind/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "aos": "^2.3.4"
+  }
+}
