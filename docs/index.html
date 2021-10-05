@@ -192,7 +192,7 @@
                     <!-- Summary heading -->
                     <h1 class="text-4xl md:text-5xl font-heading text-primary">What sets us apart?</h1>
                     <!-- Summary body -->
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">The most valuable part of a high quality education is not just the books you learn from but also the people you meet. Here at Sunward High Performace School, there is no shortage of learning opportunities - coding, robotics... the list goes on! Our teachers are always willing to go above and beyond for their students so there's no limit for what they can achieve</p>
+                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">The most valuable part of a high quality education is not just the books you learn from but also the people you meet. Sunward is a caring community where learners feel safe. High levels of care and support from staff means that nobody ever feels alone or afraid. We foster exceptional leadership qualities to ensure that your child will get the best out of their education. We understand the importance of a quality education and the lifelong benefits that come with it.</p>
                 </div>
     
                 <div class="hidden md:block">
@@ -207,7 +207,7 @@
                     <!-- Summary heading -->
                     <h1 class="text-4xl md:text-5xl font-heading text-primary">The future is now</h1>
                     <!-- Summary body -->
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Our smart TV system means that every class has a large screen that plays videos on demand, this accelerates the learning process exponacially and provides students an opportunity to learn about anything!</p>
+                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward Park High School is an e-learning school with limitless wifi to ensure that our learners can always connect to those important study resources. We also offer our learners the latest technology, like a high-quality smart TV for learning in all classes and each learner has a laptop loaded with all the text books that they need to stay up-to-date and on track!</p>
 
                     <!-- Read more btn -->
                     <a href="#" class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-all duration-300"  target="_blank" role="button">Read More</a>
@@ -233,21 +233,7 @@
                 </div>
         
             </div>
-            
-            <!-- Here for you -->
-            <div class="md:flex gap-x-3 justify-items-center items-center">
-                <div>
-                    <!-- Summary heading -->
-                    <h1 class="text-4xl md:text-5xl font-heading text-primary">Here for you</h1>
-                    <!-- Summary body -->
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward High Performace School is here for you — we're committed to working hard so that one day, the next generation of South African children will be able to call themselves college graduates who are equipped with the skills needed for a successful future. Educated today, successful tomorrow!</p>
-                </div>
 
-                <div class="hidden md:block">
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8 text-purple-800">*Images comming soon*</p>
-                </div>
-        
-            </div>
         </div>
     </section>
 
@@ -369,7 +355,7 @@
                         </div>
                         
                         <!-- School supplier btn -->
-                        <a href="http://www.earlyworx.co.za/" class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-all duration-300"  target="_blank" role="button">Find Supplier</a>
+                        <a href="https://goo.gl/maps/keFRchQYRbhoFUvV9" class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-all duration-300"  target="_blank" role="button">Our Supplier</a>
                     </div>
                 </div>
                 
@@ -423,7 +409,7 @@
                 </div>
 
                 <!-- map info -->
-                <div class="flex-grow flex flex-col gap-y-5">
+                <div class="md:flex-grow flex flex-col gap-y-5 w-60 md:w-full">
                     <div class="text-3xl md:text-4xl text-primary font-heading font-medium border-b-2 border-primary-light pb-3 w-9/12">
                         Find us here!
                     </div>
@@ -542,38 +528,8 @@
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
     <!-- Prefill email -->
-    <script>
-        $(document).ready(function (){
-            // preventing form from refreshing page
-            $("#emailForm").submit(function(e) {
-                e.preventDefault();
-
-                // creating the email
-                CreateEmail();
-            });
-
-            let CreateEmail = () => {
-                // accessing subject
-                const subject = $('#Contact-Subject').val();
-
-                // acccesing name
-                const name = $('#Contact-Name').val();
-
-                // accessing phone number
-                const phonenumber = $('#Contact-Telephone').val();
-
-                // accessing
-                const message = $('#Contact-Message').val();
-
-                // creating the email body
-                const body = `Greetings, my name is ${name}%0D%0A%0D%0A${message}%0D%0A%0D%0APhone Number: ${phonenumber}`;
-                
-                // opening the email
-                window.open(`mailto:info@shps.education?subject=${subject}&body=${body}`)
-            }
-        })
-    </script>
+    <script src="./js/custom/preFillEmail.js"></script>
 
 </body>
 
-</html>
+</html>=
