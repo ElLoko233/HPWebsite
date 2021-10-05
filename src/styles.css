@@ -27,7 +27,7 @@
 
    /* custom card */
   .card-deck{
-    @apply flex flex-wrap justify-center items-center my-20 gap-8;
+    @apply flex flex-wrap justify-center items-start my-20 gap-8;
   }
 
   .card{
@@ -39,7 +39,7 @@
   }
 
   .card-title{ 
-  @apply  font-heading text-2xl font-medium opacity-90 text-center;
+  @apply  font-heading text-2xl font-medium opacity-90 text-center text-primary-dark;
   }
 
   .card-info{

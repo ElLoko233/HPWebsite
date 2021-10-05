@@ -18,7 +18,7 @@
     <!-- website keywords -->
     <meta name="keywords" content="school, SHPS, e-learnig, small school, future, qaulity, maths, science, accounting, robotics, coding">
 
-    <!-- font  cdn -->
+    <!-- font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,7 +40,7 @@
             <a href="#">
                 <img class="w-12 md:w-14 pr-2" src="./assets/svg/SHPS_logo.svg" alt="Sunward High Performance School Badge">
             </a>
-            <p class="inline-block md:hidden opacity-90">SPHS</p>
+            <p class="inline-block md:hidden opacity-90">SHPS</p>
             <p class="hidden md:inline-block opacity-90 ">High Performance</p>
         </div>
 
@@ -53,7 +53,7 @@
         <div id="navigationlinks" class="h-0 md:h-full font-medium hidden grid gap-3 grid-cols-1 my-4 md:my-0 auto-rows-auto lg:flex flex-col lg:flex-row justify-end items-center col-span-2 overflow-hidden">
             <a href="#" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90 active">Home</a>
             <a href="#" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">About</a>
-            <a href="#enroll-criteria" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">Criteria</a>
+            <a href="#enrol-criteria" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">Criteria</a>
             <a href="#" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">subjects</a>
             <a href="index.html?#location" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">ContactUs</a>
         </div>
@@ -64,7 +64,7 @@
         <div class="container-lg mx-auto px-5 mb-32 md:mb-52 mt-24 grid md:grid-cols-2 justify-between items-center lg:gap-x-3">
             <div class="flex flex-wrap flex-col gap-5">
                 <!-- Hero Headline -->
-                <p class="font-heading text-[2.6rem] lg:text-6xl font-bold">We're making school great again</p>
+                <p id="hero-headline" class="font-heading text-[2.6rem] text-primary lg:text-6xl font-bold">A school where success is guaranteed</p>
 
                 <!-- Hero Subline -->
                 <p class="font-body text-md lg:text-lg break-words leading-8">Sunward High Performance School brings together the best of technology and education, to make learning easy and comfortable.</p>
@@ -85,7 +85,7 @@
         <!-- School Intro Description -->
         <div class="container-lg mx-auto space-y-20 lg:space-y-28 mb-32 md:mb-52 mb-34 px-5">
             <!-- What sets us apart? -->
-            <div class="md:flex gap-x-3 justify-items-center items-center">
+            <div class="md:flex flex-row-reverse gap-x-3 justify-items-center items-center">
                 <div>
                     <!-- Summary heading -->
                     <h1 class="text-4xl md:text-5xl font-heading text-primary">What sets us apart?</h1>
@@ -106,6 +106,9 @@
                     <h1 class="text-4xl md:text-5xl font-heading text-primary">The future is now</h1>
                     <!-- Summary body -->
                     <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Our smart TV system means that every class has a large screen that plays videos on demand, this accelerates the learning process exponacially and provides students an opportunity to learn about anything!</p>
+
+                    <!-- Read more btn -->
+                    <a href="#" class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-all duration-300"  target="_blank" role="button">Read More</a>
                 </div>
 
                 <div class="hidden md:block">
@@ -114,15 +117,13 @@
                
             </div>
 
-            <!-- The internet age has changed everything -->
-            <div class="md:flex gap-x-3 justify-items-center items-center">
+            <!-- Quality you can trust -->
+            <div class="md:flex gap-x-3 flex-row-reverse justify-items-center items-center">
                 <div>
                     <!-- Summary heading -->
-                    <h1 class="text-4xl md:text-5xl font-heading text-primary">The internet age has changed everything</h1>
+                    <h1 class="text-4xl md:text-5xl font-heading text-primary">Quality you can trust</h1>
                     <!-- Summary body -->
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward High Performace School is an e-learning school with limitless wifi to ensure that you can always connect to those important study resources.Through our extensive use of technology, each student is equiped with a laptop loaded with all the textbooks that they need to stay up-to-date and on track with their subjects.</p>
-                    <!-- Read more btn -->
-                    <a href="#" class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-all duration-300" role="button">Read More</a>
+                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward High Performance School offers a curriculum that is CAPS aligned, with small class sizes and a school uniform that's stylish and comfortable. We have passionate educators who are committed to enabling young people to become global citizens by fostering the values of curiosity, creativity, collaboration, courage and confidence.</p>
                 </div>
 
                 <div class="hidden md:block">
@@ -137,7 +138,7 @@
                     <!-- Summary heading -->
                     <h1 class="text-4xl md:text-5xl font-heading text-primary">Here for you</h1>
                     <!-- Summary body -->
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward High Performace School is here for you — we're committed to working hard so that one day, the next generation of South African children will be able to call themselves college graduates who are equipped with the skills needed for a successful future! We also offer small class sizes from 10-30 students so that each child can have the attention they deserve.</p>
+                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward High Performace School is here for you — we're committed to working hard so that one day, the next generation of South African children will be able to call themselves college graduates who are equipped with the skills needed for a successful future. Educated today, successful tomorrow!</p>
                 </div>
 
                 <div class="hidden md:block">
@@ -239,13 +240,37 @@
         </div>
     </section>
 
-    <!-- Enrollment Criteria -->
-    <section id="enroll-criteria">
+    <!-- Enrolment Criteria -->
+    <section id="enrol-criteria">
         <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
-            <h1 class="text-4xl md:text-5xl font-heading text-primary">Enrollment Criteria</h1>
+            <h1 class="text-4xl md:text-5xl font-heading text-primary">Enrolment Criteria</h1>
 
             <div class="card-deck">
+                <!-- Uniform -->
+                <div class="card">
+                    <div class="card-img">
+                        <span class="iconify" data-icon="mdi:hanger"></span>
+                    </div>
 
+                    <div class="card-title">
+                        School Uniform
+                    </div>
+
+                    <div class="card-info">
+                        <div class="divide-y-2 space-y-2 mb-5">
+                            <p>Blue denim jeans</p>
+                            <p class="pt-2">Black or white golf shirt</p>
+                            <p class="pt-2">Black blazer or white honours blazer</p>
+                            <p class="pt-2">Black jersey and/or black pullover</p>
+                            <p class="pt-2">Black and white tekkies/sneakers</p>
+                            <p class="pt-2">White socks for girls and grey socks for boys</p>
+                        </div>
+                        
+                        <!-- School supplier btn -->
+                        <a href="http://www.earlyworx.co.za/" class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-all duration-300"  target="_blank" role="button">Find Supplier</a>
+                    </div>
+                </div>
+                
                 <!-- Academic Performace card -->
                 <div class="card">
                     <div class="card-img">
@@ -253,16 +278,16 @@
                     </div>
 
                     <div class="card-title">
-                        Academic Performace
+                        Academic Performance
                     </div>
 
                     <div class="card-info">
-                        An individual must maintain a performance of 60% or above in Maths and Physics if they wish to continue learning at Sunward High Performace School <br><br> <span class="font-bold italic text-sm text-opacity-70">-Only applies to grade 10 - 12 learners-</span>.
+                        An individual must maintain a performance of 60% or above in Maths and Physics if they wish to continue learning at Sunward High Performace School. <br><br> <span class="font-bold italic text-sm text-opacity-70">-Only applies to grade 10 - 12 learners-</span>
                     </div>
                 </div>
 
                 <!-- laptop Specifications cards -->
-                <div class="card">
+                <div class="card h-full">
                     <div class="card-img">
                         <span class="iconify" data-icon="ic:round-laptop-mac"></span>
                     </div>
@@ -272,33 +297,11 @@
                     </div>
 
                     <div class="card-info">
-                        
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <span class="iconify" data-icon="fa-regular:money-bill-alt"></span>
-                    </div>
-
-                    <div class="card-title">
-                        School Fees
-                    </div>
-
-                    <div class="card-info">
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img">
-                        <span class="iconify" data-icon="mdi:hanger"></span>
-                    </div>
-
-                    <div class="card-title">
-                        Uniform
-                    </div>
-
-                    <div class="card-info">
+                        <div class="divide-y-2 space-y-3">
+                            <p>Memory: 4GB RAM</p>
+                            <p class="pt-3">Storage: 128GB</p>
+                            <p class="pt-3">Display size: 11' - 11.6' HD</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -367,25 +370,22 @@
                 </div>
 
             <!-- contact form -->
-                <form>
+                <form id="emailForm">
                     <div class="form-group">
                         <div class="space-y-3 flex-grow w-full">
                             <!-- name input -->
-                            <input class="form-item form-required" type="text" name="" placeholder="Name" required>
-                            
-                            <!-- email input -->
-                            <input class ="form-item" type="email" name="" placeholder="Email" required>
-
+                            <input class="form-item form-required" type="text" id="Contact-Name" placeholder="Name (Required)" required autocomplete="name">
+        
                             <!-- phone number input -->
-                            <input class ="form-item" type="tel" name="" placeholder="Phone number">
+                            <input class ="form-item" type="tel" id="Contact-Telephone" placeholder="Phone number" autocomplete="tel">
                         </div>
 
                         <div class="space-y-3 flex-grow w-full">
                             <!-- Subject input -->
-                            <input class ="form-item " type="text" name="" placeholder="Subject" required>
+                            <input class ="form-item " type="text" id="Contact-Subject" placeholder="Subject (Required)" required>
 
                             <!-- message input -->
-                            <textarea class ="form-item form-item-area" name="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <textarea class ="form-item form-item-area" id="Contact-Message" cols="30" rows="10" required placeholder="Message (Required)"></textarea>
                         </div>
                     </div>
                     <input class="form-submit" type="submit" value="Send">
@@ -426,7 +426,7 @@
             </div>
         </div>
         <div class="font-body text-center text-secondary">
-            &copy All Rights Revserved 2021
+            &copy All Rights Reserved 2021
         </div>
     </footer>
 
@@ -438,6 +438,40 @@
 
     <!-- iconify -->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <!-- Prefill email -->
+    <script>
+        $(document).ready(function (){
+            // preventing form from refreshing page
+            $("#emailForm").submit(function(e) {
+                e.preventDefault();
+
+                // creating the email
+                CreateEmail();
+            });
+
+            let CreateEmail = () => {
+                // accessing subject
+                const subject = $('#Contact-Subject').val();
+
+                // acccesing name
+                const name = $('#Contact-Name').val();
+
+                // accessing phone number
+                const phonenumber = $('#Contact-Telephone').val();
+
+                // accessing
+                const message = $('#Contact-Message').val();
+
+                // creating the email body
+                const body = `Greetings, my name is ${name}%0D%0A%0D%0A${message}%0D%0A%0D%0APhone Number: ${phonenumber}`;
+                
+                // opening the email
+                window.open(`mailto:info@shps.education?subject=${subject}&body=${body}`)
+            };
+        })
+    </script>
+
 </body>
 
 </html>
