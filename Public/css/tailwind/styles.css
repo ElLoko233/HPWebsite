@@ -1004,6 +1004,34 @@ html {
   width: 75%;
 }
 
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-\[14\.5rem\] {
+  width: 14.5rem;
+}
+
+.w-\[14\.9rem\] {
+  width: 14.9rem;
+}
+
 .flex-grow-0 {
   flex-grow: 0;
 }
@@ -1484,6 +1512,10 @@ nav .active {
 
   .md\:w-40 {
     width: 10rem;
+  }
+
+  .md\:flex-grow {
+    flex-grow: 1;
   }
 
   .md\:grid-cols-2 {
