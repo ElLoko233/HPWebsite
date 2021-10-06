@@ -1,5 +1,5 @@
 {
-  "name": "Website",
+  "name": "HPWebsite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build-tailwind": "npx tailwind -i ./src/styles.css -o ./Public/css/tailwind/styles.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lelethu Futshane",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
