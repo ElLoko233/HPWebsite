@@ -1,29 +1,27 @@
 $(document).ready(function (){
-    // preventing form from refreshing page
+    const EmailForm = document.querySelector('#emailForm');
     $("#emailForm").submit(function(e) {
+        // preventing form from refreshing page
         e.preventDefault();
 
         // creating the email
-        CreateEmail();
-    });
 
-    let CreateEmail = () => {
         // accessing subject
-        const subject = $('#Contact-Subject').val();
+        const subject = EmailForm['Contact-Subject'].value;
 
         // acccesing name
-        const name = $('#Contact-Name').val();
+        const name = EmailForm['Contact-Name'].value;
 
         // accessing phone number
-        const phonenumber = $('#Contact-Telephone').val();
+        const phonenumber = EmailForm['Contact-Telephone'].value;
 
-        // accessing
-        const message = $('#Contact-Message').val();
+        // accessing message
+        const message = EmailForm['Contact-Message'].value;
 
         // creating the email body
         const body = `Greetings, my name is ${name}%0D%0A %0D%0A %0D%0A${message}%0D%0A %0D%0AMy phone number: ${phonenumber}`;
-        
+
         // opening the email
-        window.open(`mailto:info@shps.education?subject=${subject}&body=${body}`)
-    };
+        window.open(`mailto:info@shps.education?subject=${subject}&body=${body}`);
+    });
 })

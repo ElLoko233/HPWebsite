@@ -18,7 +18,7 @@
 
     <!-- website keywords -->
     <meta name="keywords"
-        content="school, SHPS, e-learnig, small school, future, qaulity, maths, science, accounting, robotics, coding">
+        content="school, SHPS, e-learning, small school, future, qaulity, maths, science, accounting, robotics, coding, Boksburg">
 
     <!-- font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,11 +36,11 @@
 <body>
     <!-- Navigation bar -->
     <nav
-        class="w-full bg-secondary-light p-3 sticky top-0 font-heading grid gap-3 grid-cols-2 lg:flex flex-col lg:flex-row items-center justify-between text-lg capitalize z-50 mx-auto">
+        class="container-xl w-full bg-secondary-light p-3 sticky top-0 font-heading grid gap-3 grid-cols-2 lg:flex flex-col lg:flex-row items-center justify-between text-lg capitalize z-50 mx-auto antialiased">
 
         <!-- School logo -->
         <div class="flex flex-row justify-start items-center font-medium">
-            <a href="#">
+            <a href="index.html">
                 <img class="w-12 md:w-14 pr-2" src="./assets/svg/SHPS_logo.svg"
                     alt="Sunward High Performance School Badge">
             </a>
@@ -105,392 +105,405 @@
 
         <!-- Navgiations links -->
         <div id="navigationlinks"
-            class="h-0 md:h-full font-medium hidden grid gap-3 grid-cols-1 my-4 md:my-0 auto-rows-auto lg:flex flex-col lg:flex-row justify-end items-center col-span-2 overflow-hidden">
-            <a href="index.html" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90 active">Home</a>
-            <a href="about.html" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">About</a>            
-            <a href="#" class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">subjects</a>
-            <a href="#enrol-criteria"
-                class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">Criteria</a>
+            class="lg:h-full font-medium colapsed transition-all duration-75 grid gap-3 grid-cols-1 my-4 md:my-0 auto-rows-auto lg:flex flex-col lg:flex-row justify-end items-center col-span-2 overflow-hidden h-0 hidden">
+            <a href="index.html?#"
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90 active">Home</a>
+            <a href="about.html" target="_blank"
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90">About</a>
+            <a href="subjects.html" target="_blank"
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90">subjects</a>
+            <a href="index.html?#enrol-criteria"
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90">Criteria</a>
             <a href="index.html?#location"
-                class="w-max opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">ContactUs</a>
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90">ContactUs</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="Hero">
-        <div
-            class="container-lg mx-auto px-5 mb-32 md:mb-52 mt-24 grid md:grid-cols-2 justify-between items-center lg:gap-x-3">
-            <div class="flex flex-wrap flex-col gap-5">
-                <!-- Hero Headline -->
-                <p id="hero-headline" class="font-heading text-[2.6rem] text-primary lg:text-6xl font-bold">A school
-                    where success is guaranteed</p>
+    <main>
+        <section id="Hero">
+            <div
+                class="container-lg mx-auto px-5 mb-32 md:mb-52 mt-6 md:mt-24 grid md:grid-cols-2 justify-between items-center lg:gap-x-3">
+                <div class="flex flex-wrap flex-col gap-5">
+                    <!-- Hero Headline -->
+                    <p id="hero-headline" class="font-heading text-[2.6rem] text-primary lg:text-6xl font-bold">A school
+                        where success is guaranteed</p>
 
-                <!-- Hero Subline -->
-                <p class="font-body text-md lg:text-lg break-words leading-8">Sunward High Performance School brings
-                    together the best of technology and education, to make learning easy and comfortable.</p>
+                    <!-- Hero Subline -->
+                    <p class="font-body text-md lg:text-lg break-words leading-8">Sunward High Performance School brings
+                        together the best of technology and education, to make learning easy and comfortable.</p>
 
-                <!-- CTA btn -->
-                <a href="#contactForm"
-                    class="bg-primary text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-md rounded hover:bg-primary-dark transition-all duration-300">Join
-                    Now</a>
-            </div>
+                    <!-- CTA btn -->
+                    <a href="index.html?#contactForm"
+                        class="bg-primary text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-md rounded hover:bg-primary-dark transition-colors duration-300">Join
+                        Now</a>
+                </div>
 
-            <div>
-                <!-- Hero Image-->
-                <img src="./assets/svg/SHPS_logo.svg" class="hidden m-0 md:block md:w-full">
-            </div>
-        </div>
-    </section>
-
-    <!-- AboutUs summary -->
-    <section id="summary">
-        <!-- School Intro Description -->
-        <div class="container-lg mx-auto space-y-20 lg:space-y-28 mb-32 md:mb-52 mb-34 px-5">
-            <!-- What sets us apart? -->
-            <div class="md:flex flex-row-reverse gap-x-3 justify-items-center items-center">
                 <div>
-                    <!-- Summary heading -->
-                    <h1 class="text-4xl md:text-5xl font-heading text-primary">What sets us apart?</h1>
-                    <!-- Summary body -->
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">The most valuable part of a
-                        high quality education is not just the books you learn from but also the people you meet.
-                        Sunward is a caring community where learners feel safe. High levels of care and support from
-                        staff means that nobody ever feels alone or afraid. We foster exceptional leadership qualities
-                        to ensure that your child will get the best out of their education. We understand the importance
-                        of a quality education and the lifelong benefits that come with it.</p>
-                </div>
-
-                <div class="hidden md:block">
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8 text-purple-800">*Images
-                        comming soon*</p>
-                </div>
-
-            </div>
-
-            <!-- The future is now -->
-            <div class="md:flex gap-x-3 justify-items-center items-center">
-                <div>
-                    <!-- Summary heading -->
-                    <h1 class="text-4xl md:text-5xl font-heading text-primary">The future is now</h1>
-                    <!-- Summary body -->
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward Park High School is an
-                        e-learning school with limitless wifi to ensure that our learners can always connect to those
-                        important study resources. We also offer our learners the latest technology, like a high-quality
-                        smart TV for learning in all classes and each learner has a laptop loaded with all the text
-                        books that they need to stay up-to-date and on track!</p>
-
-                    <!-- Read more btn -->
-                    <a href="#"
-                        class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-all duration-300"
-                        target="_blank" role="button">Read More</a>
-                </div>
-
-                <div class="hidden md:block">
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8 text-purple-800">*Images
-                        comming soon*</p>
-                </div>
-
-            </div>
-
-            <!-- Quality you can trust -->
-            <div class="md:flex gap-x-3 flex-row-reverse justify-items-center items-center">
-                <div>
-                    <!-- Summary heading -->
-                    <h1 class="text-4xl md:text-5xl font-heading text-primary">Quality you can trust</h1>
-                    <!-- Summary body -->
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward High Performance
-                        School offers a curriculum that is CAPS aligned, with small class sizes and a school uniform
-                        that's stylish and comfortable. We have passionate educators who are committed to enabling young
-                        people to become global citizens by fostering the values of curiosity, creativity,
-                        collaboration, courage and confidence.</p>
-                </div>
-
-                <div class="hidden md:block">
-                    <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8 text-purple-800">*Images
-                        comming soon*</p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Timetable summary -->
-    <section id="timetable-summary">
-        <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
-            <h1 class="text-4xl md:text-5xl font-heading text-primary">Timetable summary</h1>
-
-            <!-- timetable cards -->
-            <div id="timetable-pack"
-                class="mx-auto mt-10 my-6 font-body gap-y-2 md:gap-y-5 md:gap-x-5 flex flex-col md:flex-row flex-wrap justify-center">
-                <div
-                    class="tt-item gap-x-[0.11rem] flex flex-row md:flex-col rounded drop-shadow-md hover:drop-shadow-xl w-full md:w-40 h-full">
-                    <div
-                        class="tt-item-time md:space-y-2 bg-primary text-secondary px-5 md:px-8 py-2 md:py-5 rounded-l-lg md:rounded-t-3xl md:rounded-b-none font-medium text-center md:text-left w-44 md:w-full">
-                        <p class="tt-item-time-start md:text-2xl md:font-semibold">
-                            07:30
-                        </p>
-                        <p class="tt-item-time-end opacity-70 md:text-xl">
-                            15:45
-                        </p>
-                    </div>
-
-                    <div
-                        class="tt-item-info bg-primary-light text-secondary pl-4 md:px-5 py-2 md:py-12 w-full h-full rounded-r md:rounded-b-3xl md:rounded-t-none md:space-y-3">
-                        <p class="tt-item-info-detail md:text-xl">
-                            School Start-End
-                        </p>
-                        <p class="tt-item-info-date opacity-70 md:text-lg">
-                            Mon - Thurs
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    class="tt-item gap-x-[0.11rem] flex flex-row md:flex-col rounded drop-shadow-md hover:drop-shadow-xl w-full md:w-40 h-full">
-                    <div
-                        class="tt-item-time md:space-y-2 bg-primary text-secondary px-5 md:px-8 py-2 md:py-5 rounded-l-lg md:rounded-t-3xl md:rounded-b-none font-medium text-center md:text-left w-44 md:w-full">
-                        <p class="tt-item-time-start md:text-2xl md:font-semibold">
-                            07:30
-                        </p>
-                        <p class="tt-item-time-end opacity-70 md:text-xl">
-                            14:00
-                        </p>
-                    </div>
-
-                    <div
-                        class="tt-item-info bg-primary-light text-secondary pl-4 md:px-5 py-2 md:py-12 w-full h-full rounded-r md:rounded-b-3xl md:rounded-t-none md:space-y-3">
-                        <p class="tt-item-info-detail md:text-xl">
-                            School Start-End
-                        </p>
-                        <p class="tt-item-info-date opacity-70 md:text-lg">
-                            Fri
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    class="tt-item gap-x-[0.11rem] flex flex-row md:flex-col rounded drop-shadow-md hover:drop-shadow-xl w-full md:w-40 h-full md:h-[19rem]">
-                    <div
-                        class="tt-item-time md:space-y-2 bg-primary text-secondary px-5 md:px-8 py-2 md:py-5 rounded-l-lg md:rounded-t-3xl md:rounded-b-none font-medium text-center md:text-left w-44 md:w-full">
-                        <p class="tt-item-time-start md:text-2xl md:font-semibold">
-                            11:15
-                        </p>
-                        <p class="tt-item-time-end opacity-70 md:text-xl">
-                            11:45
-                        </p>
-                    </div>
-
-                    <div
-                        class="tt-item-info bg-primary-light text-secondary pl-4 md:px-5 py-2 md:py-12 w-full h-full rounded-r md:rounded-b-3xl md:rounded-t-none md:space-y-3">
-                        <p class="tt-item-info-detail md:text-xl">
-                            First Break
-                        </p>
-                        <p class="tt-item-info-date opacity-70 md:text-lg">
-                            Mon - Fri
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    class="tt-item gap-x-[0.11rem] flex flex-row md:flex-col rounded drop-shadow-md hover:drop-shadow-xl w-full md:w-40 h-full md:h-[19rem]">
-                    <div
-                        class="tt-item-time md:space-y-2 bg-primary text-secondary px-5 md:px-8 py-2 md:py-5 rounded-l-lg md:rounded-t-3xl md:rounded-b-none font-medium text-center md:text-left w-44 md:w-full">
-                        <p class="tt-item-time-start md:text-2xl md:font-semibold">
-                            14:00
-                        </p>
-                        <p class="tt-item-time-end opacity-70 md:text-xl">
-                            14:15
-                        </p>
-                    </div>
-
-                    <div
-                        class="tt-item-info bg-primary-light text-secondary pl-4 md:px-5 py-2 md:py-12 w-full h-full rounded-r md:rounded-b-3xl md:rounded-t-none md:space-y-3">
-                        <p class="tt-item-info-detail md:text-xl">
-                            Second break
-                        </p>
-                        <p class="tt-item-info-date opacity-70 md:text-lg">
-                            Mon - Thurs
-                        </p>
-                    </div>
+                    <!-- Hero Image-->
+                    <img src="./assets/svg/SHPS_logo.svg" class="hidden m-0 md:block md:w-full">
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- Enrolment Criteria -->
-    <section id="enrol-criteria">
-        <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
-            <h1 class="text-4xl md:text-5xl font-heading text-primary">Enrolment Criteria</h1>
-
-            <div class="card-deck">
-                <!-- Uniform -->
-                <div class="card">
-                    <div class="card-img">
-                        <span class="iconify" data-icon="mdi:hanger"></span>
-                    </div>
-
-                    <div class="card-title">
-                        School Uniform
-                    </div>
-
-                    <div class="card-info">
-                        <div class="divide-y-2 space-y-2 mb-5">
-                            <p>Blue denim jeans</p>
-                            <p class="pt-2">Black or white golf shirt</p>
-                            <p class="pt-2">Black blazer or white honours blazer</p>
-                            <p class="pt-2">Black jersey and/or black pullover</p>
-                            <p class="pt-2">Black and white tekkies/sneakers</p>
-                            <p class="pt-2">White socks for girls and grey socks for boys</p>
-                        </div>
-
-                        <!-- School supplier btn -->
-                        <a href="https://goo.gl/maps/keFRchQYRbhoFUvV9"
-                            class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-all duration-300"
-                            target="_blank" role="button">Our Supplier</a>
-                    </div>
-                </div>
-
-                <!-- Academic Performace card -->
-                <div class="card">
-                    <div class="card-img">
-                        <span class="iconify" data-icon="ic:round-school"></span>
-                    </div>
-
-                    <div class="card-title">
-                        Academic Performance
-                    </div>
-
-                    <div class="card-info">
-                        An individual must maintain a performance of 60% or above in Maths and Physics if they wish to
-                        continue learning at Sunward High Performace School. <br><br> <span
-                            class="font-bold italic text-sm text-opacity-70">-Only applies to grade 10 - 12
-                            learners-</span>
-                    </div>
-                </div>
-
-                <!-- laptop Specifications cards -->
-                <div class="card h-full">
-                    <div class="card-img">
-                        <span class="iconify" data-icon="ic:round-laptop-mac"></span>
-                    </div>
-
-                    <div class="card-title">
-                        laptop Specifications
-                    </div>
-
-                    <div class="card-info">
-                        <div class="divide-y-2 space-y-3">
-                            <p>Memory: 4GB RAM</p>
-                            <p class="pt-3">Storage: 128GB</p>
-                            <p class="pt-3">Display size: 11' - 11.6' HD</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- location -->
-    <section id="location">
-        <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
-            <div class="map flex justify-center items-center w-full gap-x-7">
-                <!-- map -->
-                <div class="hidden lg:block flex-grow-0">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d386.15859138937077!2d28.244135!3d-26.244800000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x913c59efa886f1e9!2sSunward%20Park%20High%20Performance!5e1!3m2!1sen!2sza!4v1632211928541!5m2!1sen!2sza"
-                        width="500" height="450" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
-                </div>
-                <div class="hidden md:block lg:hidden flex-grow-0">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d386.15859138937077!2d28.244135!3d-26.244800000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x913c59efa886f1e9!2sSunward%20Park%20High%20Performance!5e1!3m2!1sen!2sza!4v1632211928541!5m2!1sen!2sza"
-                        width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-
-                <!-- map info -->
-                <div class="md:flex-grow flex flex-col gap-y-5 w-10/12 md:w-full">
-                    <div
-                        class="text-3xl md:text-4xl text-primary font-heading font-medium border-b-2 border-primary-light pb-3 w-9/12">
-                        Find us here!
-                    </div>
-
-                    <!-- school address -->
-                    <div class="my-5 text-lg leading-8 capitalize fomt-body">
-                        South Africa <br>
-                        Gauteng Province <br>
-                        Boksburg <br>
-                        Farrar Park <br>
-                        6 Hanau Avenue <br>
-                        1459
-                    </div>
-
+        <!-- AboutUs summary -->
+        <section id="summary">
+            <!-- School Intro Description -->
+            <div class="container-lg mx-auto space-y-20 lg:space-y-28 mb-32 md:mb-52 mb-34 px-5">
+                <!-- What sets us apart? -->
+                <div class="md:flex flex-row-reverse gap-x-5 justify-items-center items-center">
                     <div>
-                        <a href="https://goo.gl/maps/tsAaZhJLp44KVjoQ7" target='_blank'
-                            class="md:hidden bg-primary-light text-secondary text-sm md:text-base w-max p-2 md:p-3 font-semibold rounded hover:bg-primary-dark transition-all duration-300">
-                            Open map
-                        </a>
+                        <!-- Summary heading -->
+                        <h1 class="text-4xl md:text-5xl font-heading text-primary">What sets us apart?</h1>
+                        <!-- Summary body -->
+                        <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">The most valuable part of
+                            a
+                            high quality education is not just the books you learn from but also the people you meet.
+                            Sunward is a caring community where learners feel safe. High levels of care and support from
+                            staff means that nobody ever feels alone or afraid. We foster exceptional leadership
+                            qualities
+                            to ensure that your child will get the best out of their education. We understand the
+                            importance
+                            of a quality education and the lifelong benefits that come with it.</p>
+                    </div>
+
+                    <div class="hidden md:block flex-grow">
+                        <img src="./assets/images/test.svg" width="1980vh">
+                    </div>
+                </div>
+
+                <!-- The future is now -->
+                <div class="md:flex gap-x-3 justify-items-center items-center">
+                    <div>
+                        <!-- Summary heading -->
+                        <h1 class="text-4xl md:text-5xl font-heading text-primary">The future is now</h1>
+                        <!-- Summary body -->
+                        <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward Park High School
+                            is an
+                            e-learning school with limitless wifi to ensure that our learners can always connect to
+                            those
+                            important study resources. We also offer our learners the latest technology, like a
+                            high-quality
+                            smart TV for learning in all classes and each learner has a laptop loaded with all the text
+                            books that they need to stay up-to-date and on track!</p>
+
+                        <!-- Read more btn -->
+                        <a href="#"
+                            class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-colors duration-300"
+                            role="button">Read More</a>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8 text-purple-800">*Images
+                            comming soon*</p>
+                    </div>
+
+                </div>
+
+                <!-- Quality you can trust -->
+                <div class="md:flex gap-x-3 flex-row-reverse justify-items-center items-center">
+                    <div>
+                        <!-- Summary heading -->
+                        <h1 class="text-4xl md:text-5xl font-heading text-primary">Quality you can trust</h1>
+                        <!-- Summary body -->
+                        <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8">Sunward High Performance
+                            School offers a curriculum that is CAPS aligned, with small class sizes and a school uniform
+                            that's stylish and comfortable. We have passionate educators who are committed to enabling
+                            our
+                            learners to become global citizens by fostering the values of curiosity, creativity,
+                            collaboration, courage and confidence.</p>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <p class="font-body text-m md:text-lg text-opacity-90 leading-8 my-8 text-purple-800">*Images
+                            comming soon*</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Timetable summary -->
+        <section id="timetable-summary">
+            <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
+                <h1 class="text-4xl md:text-5xl font-heading text-primary">Timetable summary</h1>
+
+                <!-- timetable cards -->
+                <div id="timetable-pack"
+                    class="mx-auto mt-10 my-6 font-body gap-y-2 md:gap-y-5 md:gap-x-5 flex flex-col md:flex-row flex-wrap justify-center">
+                    <div
+                        class="tt-item gap-x-[0.11rem] flex flex-row md:flex-col rounded drop-shadow-md hover:drop-shadow-xl w-full md:w-40 h-full">
+                        <div
+                            class="tt-item-time md:space-y-2 bg-primary text-secondary px-5 md:px-8 py-2 md:py-5 rounded-l-lg md:rounded-t-3xl md:rounded-b-none font-medium text-center md:text-left w-44 md:w-full">
+                            <p class="tt-item-time-start md:text-2xl md:font-semibold">
+                                07:30
+                            </p>
+                            <p class="tt-item-time-end opacity-70 md:text-xl">
+                                15:45
+                            </p>
+                        </div>
+
+                        <div
+                            class="tt-item-info bg-primary-light text-secondary pl-4 md:px-5 py-2 md:py-12 w-full h-full rounded-r md:rounded-b-3xl md:rounded-t-none md:space-y-3">
+                            <p class="tt-item-info-detail md:text-xl">
+                                School Start-End
+                            </p>
+                            <p class="tt-item-info-date opacity-70 md:text-lg">
+                                Mon - Thurs
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="tt-item gap-x-[0.11rem] flex flex-row md:flex-col rounded drop-shadow-md hover:drop-shadow-xl w-full md:w-40 h-full">
+                        <div
+                            class="tt-item-time md:space-y-2 bg-primary text-secondary px-5 md:px-8 py-2 md:py-5 rounded-l-lg md:rounded-t-3xl md:rounded-b-none font-medium text-center md:text-left w-44 md:w-full">
+                            <p class="tt-item-time-start md:text-2xl md:font-semibold">
+                                07:30
+                            </p>
+                            <p class="tt-item-time-end opacity-70 md:text-xl">
+                                14:00
+                            </p>
+                        </div>
+
+                        <div
+                            class="tt-item-info bg-primary-light text-secondary pl-4 md:px-5 py-2 md:py-12 w-full h-full rounded-r md:rounded-b-3xl md:rounded-t-none md:space-y-3">
+                            <p class="tt-item-info-detail md:text-xl">
+                                School Start-End
+                            </p>
+                            <p class="tt-item-info-date opacity-70 md:text-lg">
+                                Fri
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="tt-item gap-x-[0.11rem] flex flex-row md:flex-col rounded drop-shadow-md hover:drop-shadow-xl w-full md:w-40 h-full md:h-[19rem]">
+                        <div
+                            class="tt-item-time md:space-y-2 bg-primary text-secondary px-5 md:px-8 py-2 md:py-5 rounded-l-lg md:rounded-t-3xl md:rounded-b-none font-medium text-center md:text-left w-44 md:w-full">
+                            <p class="tt-item-time-start md:text-2xl md:font-semibold">
+                                11:15
+                            </p>
+                            <p class="tt-item-time-end opacity-70 md:text-xl">
+                                11:45
+                            </p>
+                        </div>
+
+                        <div
+                            class="tt-item-info bg-primary-light text-secondary pl-4 md:px-5 py-2 md:py-12 w-full h-full rounded-r md:rounded-b-3xl md:rounded-t-none md:space-y-3">
+                            <p class="tt-item-info-detail md:text-xl">
+                                First Break
+                            </p>
+                            <p class="tt-item-info-date opacity-70 md:text-lg">
+                                Mon - Fri
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="tt-item gap-x-[0.11rem] flex flex-row md:flex-col rounded drop-shadow-md hover:drop-shadow-xl w-full md:w-40 h-full md:h-[19rem]">
+                        <div
+                            class="tt-item-time md:space-y-2 bg-primary text-secondary px-5 md:px-8 py-2 md:py-5 rounded-l-lg md:rounded-t-3xl md:rounded-b-none font-medium text-center md:text-left w-44 md:w-full">
+                            <p class="tt-item-time-start md:text-2xl md:font-semibold">
+                                14:00
+                            </p>
+                            <p class="tt-item-time-end opacity-70 md:text-xl">
+                                14:15
+                            </p>
+                        </div>
+
+                        <div
+                            class="tt-item-info bg-primary-light text-secondary pl-4 md:px-5 py-2 md:py-12 w-full h-full rounded-r md:rounded-b-3xl md:rounded-t-none md:space-y-3">
+                            <p class="tt-item-info-detail md:text-xl">
+                                Second break
+                            </p>
+                            <p class="tt-item-info-date opacity-70 md:text-lg">
+                                Mon - Thurs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Enrolment Criteria -->
+        <section id="enrol-criteria">
+            <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
+                <h1 class="text-4xl md:text-5xl font-heading text-primary">Enrolment Criteria</h1>
+
+                <div class="card-deck">
+                    <!-- Uniform -->
+                    <div class="card">
+                        <div class="card-img">
+                            <span class="iconify" data-icon="mdi:hanger"></span>
+                        </div>
+
+                        <div class="card-title">
+                            School Uniform
+                        </div>
+
+                        <div class="card-info">
+                            <div class="divide-y-2 space-y-2 mb-5">
+                                <p>Blue denim jeans</p>
+                                <p class="pt-2">Black or white golf shirt</p>
+                                <p class="pt-2">Black blazer or white honours blazer</p>
+                                <p class="pt-2">Black jersey and/or black pullover</p>
+                                <p class="pt-2">Black and white tekkies/sneakers</p>
+                                <p class="pt-2">White socks for girls and grey socks for boys</p>
+                            </div>
+
+                            <!-- School supplier btn -->
+                            <a href="https://goo.gl/maps/keFRchQYRbhoFUvV9"
+                                class="bg-primary-light text-secondary text-sm md:text-base w-max p-2 px-3 md:px-5 font-semibold drop-shadow-sm rounded hover:bg-primary-dark transition-colors duration-300"
+                                target="_blank" role="button">Our Supplier</a>
+                        </div>
+                    </div>
+
+                    <!-- Academic Performace card -->
+                    <div class="card">
+                        <div class="card-img">
+                            <span class="iconify" data-icon="ic:round-school"></span>
+                        </div>
+
+                        <div class="card-title">
+                            Academic Performance
+                        </div>
+
+                        <div class="card-info">
+                            An individual must maintain a performance of 60% or above in Maths and Physics if they wish
+                            to
+                            continue learning at Sunward High Performace School. <br><br> <span
+                                class="font-bold italic text-sm text-opacity-70">-Only applies to grade 10 - 12
+                                learners-</span>
+                        </div>
+                    </div>
+
+                    <!-- laptop Specifications cards -->
+                    <div class="card h-full">
+                        <div class="card-img">
+                            <span class="iconify" data-icon="ic:round-laptop-mac"></span>
+                        </div>
+
+                        <div class="card-title">
+                            laptop Specifications
+                        </div>
+
+                        <div class="card-info">
+                            <div class="divide-y-2 space-y-3">
+                                <p>Memory: 4GB RAM</p>
+                                <p class="pt-3">Storage: 128GB</p>
+                                <p class="pt-3">Display size: 11' - 11.6' HD</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact us form -->
-    <section id="contactForm">
-        <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
-            <div class="shadow-xl border-2 border-primary-light rounded-md p-4 space-y-8">
-                <!-- title -->
-                <div class="text-3xl md:text-4xl font-heading font-medium text-primary border-b-2 border-primary pb-3">
-                    Contact us!
-                </div>
-
-                <!-- contacting options -->
-                <div class="flex flex-row justify-around items-center gap-x-10">
-                    <div class="text-primary flex-grow-0 text-4xl hover:opacity-80 transition-all duration-300">
-                        <a href="tel:(010) 023 2073"><span class="iconify" data-icon="el:phone"></span></a>
+        <!-- location -->
+        <section id="location">
+            <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
+                <div class="map flex justify-center items-center w-full gap-x-7">
+                    <!-- map -->
+                    <div class="hidden lg:block flex-grow-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d386.15859138937077!2d28.244135!3d-26.244800000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x913c59efa886f1e9!2sSunward%20Park%20High%20Performance!5e1!3m2!1sen!2sza!4v1632211928541!5m2!1sen!2sza"
+                            width="500" height="450" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+                    </div>
+                    <div class="hidden md:block lg:hidden flex-grow-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d386.15859138937077!2d28.244135!3d-26.244800000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x913c59efa886f1e9!2sSunward%20Park%20High%20Performance!5e1!3m2!1sen!2sza!4v1632211928541!5m2!1sen!2sza"
+                            width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
 
-                    <div class="text-primary flex-grow-0 text-4xl hover:opacity-80 transition-all duration-300">
-                        <a href="https://www.facebook.com/sunwardparkhighschool/" target="_blank"><span class="iconify"
-                                data-icon="brandico:facebook-rect"></span></a>
-                    </div>
-
-                    <div class="text-primary flex-grow-0 text-[2.8em] hover:opacity-80 transition-all duration-300">
-                        <a href="mailto:info@shps.education"><span class="iconify"
-                                data-icon="ic:round-email"></span></a>
-                    </div>
-
-                </div>
-
-                <!-- contact form -->
-                <form id="emailForm">
-                    <div class="form-group">
-                        <div class="space-y-3 flex-grow w-full">
-                            <!-- name input -->
-                            <input class="form-item form-required" type="text" id="Contact-Name"
-                                placeholder="Name (Required)" required autocomplete="name">
-
-                            <!-- phone number input -->
-                            <input class="form-item" type="tel" id="Contact-Telephone" placeholder="Phone number"
-                                autocomplete="tel">
+                    <!-- map info -->
+                    <div class="md:flex-grow flex flex-col gap-y-5 w-10/12 md:w-full">
+                        <div
+                            class="text-3xl md:text-4xl text-primary font-heading font-medium border-b-2 border-primary-light pb-3 w-9/12">
+                            Find us here!
                         </div>
 
-                        <div class="space-y-3 flex-grow w-full">
-                            <!-- Subject input -->
-                            <input class="form-item " type="text" id="Contact-Subject" placeholder="Subject (Required)"
-                                required>
+                        <!-- school address -->
+                        <div class="my-5 text-lg leading-8 capitalize fomt-body">
+                            South Africa <br>
+                            Gauteng Province <br>
+                            Boksburg <br>
+                            Farrar Park <br>
+                            6 Hanau Avenue <br>
+                            1459
+                        </div>
 
-                            <!-- message input -->
-                            <textarea class="form-item form-item-area" id="Contact-Message" cols="30" rows="10" required
-                                placeholder="Message (Required)"></textarea>
+                        <div>
+                            <a href="https://goo.gl/maps/tsAaZhJLp44KVjoQ7" target='_blank'
+                                class="md:hidden bg-primary-light text-secondary text-sm md:text-base w-max p-2 md:p-3 font-semibold rounded hover:bg-primary-dark transition-colors duration-300">
+                                Open map
+                            </a>
                         </div>
                     </div>
-                    <input class="form-submit" type="submit" value="Send">
-                </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Contact us form -->
+        <section id="contactForm">
+            <div class="container-lg mx-auto mb-32 md:mb-52 px-5">
+                <div class="shadow-xl border-2 border-primary-light rounded-md p-4 space-y-8">
+                    <!-- title -->
+                    <div
+                        class="text-3xl md:text-4xl font-heading font-medium text-primary border-b-2 border-primary pb-3">
+                        Contact us!
+                    </div>
+
+                    <!-- contacting options -->
+                    <div class="flex flex-row justify-around items-center gap-x-10">
+                        <div class="text-primary flex-grow-0 text-4xl hover:opacity-80 transition-opacity duration-150>
+                            <a href="tel:(010) 023 2073"><span class="iconify" data-icon="el:phone"></span></a>
+                        </div>
+
+                        <div class="text-primary flex-grow-0 text-4xl hover:opacity-80 transition-opacity duration-150">
+                            <a href="https://www.facebook.com/sunwardparkhighschool/" target="_blank"><span
+                                    class="iconify" data-icon="brandico:facebook-rect"></span></a>
+                        </div>
+
+                        <div
+                            class="text-primary flex-grow-0 text-[2.8em] hover:opacity-80 transition-opacity duration-150">
+                            <a href="mailto:info@shps.education"><span class="iconify"
+                                    data-icon="ic:round-email"></span></a>
+                        </div>
+
+                    </div>
+
+                    <!-- contact form -->
+                    <form id="emailForm">
+                        <div class="form-group">
+                            <div class="space-y-3 flex-grow w-full">
+                                <!-- name input -->
+                                <input class="form-item form-required" type="text" id="Contact-Name"
+                                    placeholder="Name (Required)" required autocomplete="name">
+
+                                <!-- phone number input -->
+                                <input class="form-item" type="tel" id="Contact-Telephone" placeholder="Phone number"
+                                    autocomplete="tel">
+                            </div>
+
+                            <div class="space-y-3 flex-grow w-full">
+                                <!-- Subject input -->
+                                <input class="form-item " type="text" id="Contact-Subject"
+                                    placeholder="Subject (Required)" required>
+
+                                <!-- message input -->
+                                <textarea class="form-item form-item-area" id="Contact-Message" cols="30" rows="10"
+                                    required placeholder="Message (Required)"></textarea>
+                            </div>
+                        </div>
+                        <input class="form-submit" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!--footer -->
     <footer class="bg-primary">
@@ -548,3 +561,7 @@
 </body>
 
 </html>
+
+<!-- TOOD: Animate navlinks to smoothly collapse -->
+<!-- TODO: Optimize images to improve site SEO -->
+<!-- TODO: Figure out how to change the hero headline  -->
