@@ -27,7 +27,7 @@
 
    /* custom card */
   .card-deck{
-    @apply flex flex-wrap justify-center items-start my-20 gap-8;
+    @apply flex flex-wrap justify-center items-start mt-12 gap-8;
   }
 
   .card{
@@ -100,4 +100,5 @@ nav .opened{
 nav .active{
   @apply opacity-95;
 }
+
 

@@ -6,7 +6,7 @@ $(document).ready(function(){
 });
 
 const toggleNav = () => {
-    // togggling #navigation-toggler isible state
+    // togggling #navigation-toggler visible state
     $("#navigation-toggler").toggleClass('opened');
 
 
