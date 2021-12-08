@@ -101,4 +101,17 @@ nav .active{
   @apply opacity-95;
 }
 
+.scaleIn{
+  animation-name: scaleIn;
+  transform-origin: center;
+}
 
+@keyframes scaleIn {
+  from {
+    transform: scale(.7);
+  }
+
+  to{
+    transform: scale(1);
+  }
+}

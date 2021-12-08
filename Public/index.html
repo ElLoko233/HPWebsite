@@ -331,17 +331,22 @@
 
         <!-- image slider -->
         <section id="image-slider">
-            <div class="container mx-auto mb-28">
-                <div class="myslider">
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/0"></div>
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/1"></div>
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/2"></div>
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/3"></div>
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/4"></div>
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/5"></div>
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/6"></div>
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/7"></div>
-                    <div><img class="w-44 md:w-56 lg:w-80 object-contain rounded-md shadow-lg" src="./assets/images/8"></div>
+            <div class="container mx-auto mb-28 p-3 md:p-7 relative w-full">
+                <div class="slider-controls absolute w-11/12 left-[4%] top-[42%] z-10 flex flex-row justify-between" id="slider-controls">
+                    <span class="iconify prev cursor-pointer hover:bg-opacity-90 hover:rounded-[30%] transition-all duration-150 ease-in-out bg-primary-dark bg-opacity-75 text-5xl text-white rounded-[50%] p-2" data-icon="ic:baseline-keyboard-arrow-left"></span>
+                    <span class="iconify next cursor-pointer hover:bg-opacity-90 hover:rounded-[30%] transition-all duration-150 ease-in-out bg-primary-dark bg-opacity-75 text-5xl text-white rounded-[50%] p-2" data-icon="ic:baseline-keyboard-arrow-right"></span>
+                </div>
+
+                <div class="myslider justify-center align-center z-0">
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/0"></div>
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/1"></div>
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/2"></div>
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/3"></div>
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/4"></div>
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/5"></div>
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/6"></div>
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/7"></div>
+                    <div><img class="block mx-auto w-64 lg:w-96 object-contain rounded-md shadow-lg" src="./assets/images/8"></div>
                 </div>
             </div>
         </section>
@@ -584,8 +589,31 @@
 
         var slider = _tns({
             container: '.myslider',
-            items: 3,
+            mode: 'gallery',
             gutter: 'auto',
+            controlsContainer: '#slider-controls',
+            animateIn: 'scaleIn',
+            items: 3,
+            speed: 1000,
+            autoplay: true,
+            nav: false,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            lazyload: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+
+                768: {
+                    items: 2,
+                },
+
+                1024: {
+                    items:3,
+                    gutter: 10,
+                }
+            }
         });
     </script>
 
