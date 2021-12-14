@@ -1,7 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: ["./Public/*.html"],
-  darkMode: 'media', // or 'media' or 'class'
+  content: ["./Public/*.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -23,9 +21,6 @@ module.exports = {
          }
        }       
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require("@tailwindcss/forms")({
