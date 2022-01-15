@@ -105,14 +105,14 @@ nav .active{
 /* about us page */
 /* school stroy bg image */
 #school-story{
-  background-image: linear-gradient(rgba(0, 8, 20, .87), rgba(0, 8, 20, .87)), url('../../assets/images/school entrance.jpg');
+  background-image: linear-gradient(rgba(0, 8, 20, .87), rgba(0, 8, 20, .85)), url('../../assets/images/school entrance.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   @apply  p-5 md:p-10;
 }
 #school-how{
-  background-image: linear-gradient(rgba(0, 8, 20, .87), rgba(0, 8, 20, .87)), url('../../assets/images/school entrance.jpg');
+  background-image: linear-gradient(rgba(0, 8, 20, .87), rgba(0, 8, 20, .85)), url('../../assets/images/school entrance.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
