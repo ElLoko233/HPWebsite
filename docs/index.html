@@ -30,13 +30,34 @@
     <!-- Tailwind css -->
     <link href="./css/tailwind/styles.css" rel="stylesheet">
 
-    <!-- tinyslider css -->
-    <link rel="stylesheet" href="./js/custom/tiny-slider-master/dist/tiny-slider.css">
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="./js/custom/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/custom/slick/slick-theme.css"/>
 
     <title>Home | Sunward High Performance School</title>
 </head>
 
 <body>
+    <!-- Jquery -->
+    <script src="./js/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- slick 1.8.1 plugin -->
+    <script type="text/javascript" src="./js/custom/slick/slick.min.js"></script>
+
+    <!-- caorouselImages.js -->
+    <script type="text/javascript" src="./js/custom/carouselImages.js"></script>
+
+    <!-- iconify -->
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <!-- hotdognav code -->
+    <script src="./js/custom/hotdognavicon.js"></script>
+
+    <!-- Prefill email -->
+    <script src="./js/custom/preFillEmail.js"></script>
+
+
+
     <!-- Navigation bar -->
     <nav
         class="container-2xl w-full bg-secondary-light sticky top-0 font-heading grid gap-3 grid-cols-2 lg:flex flex-col lg:flex-row items-center justify-between text-lg capitalize z-50 mx-auto">
@@ -569,53 +590,6 @@
             &copy All Rights Reserved 2021
         </div>
     </footer>
-
-    <!-- Jquery -->
-    <script src="./js/jquery/jquery-3.6.0.min.js"></script>
-
-    <!-- tinyslider plugin -->
-    <script src="./js/custom/tiny-slider-master/dist/tiny-slider.js"></script>
-
-    <!-- iconify -->
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-
-    <!-- hotdognav code -->
-    <script src="./js/custom/hotdognavicon.js"></script>
-
-    <!-- Prefill email -->
-    <script src="./js/custom/preFillEmail.js"></script>
-
-    <!-- carouselImages.js -->
-    <script type="module">
-
-        var slider = _tns({
-            container: '.myslider',
-            gutter: 'auto',
-            speed: 1000,
-            autoplay: true,
-            controls: false,
-            nav: false,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            lazyload: true,
-            
-            responsive: {
-                0: {
-                    items: 1,
-                },
-
-                768: {
-                    items: 2,
-                },
-
-                1024: {
-                    items:3,
-                    gutter: 10,
-                }
-            }
-        });
-    </script>
-
 </body>
 
 </html>
