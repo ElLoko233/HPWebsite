@@ -10,6 +10,7 @@
   /* Smooth scroll within page */
   html {
     scroll-behavior: smooth;
+    @apply bg-secondary;
   }
 }
 
@@ -25,13 +26,56 @@
     background-image: url('../../assets/svg/hotdogNavIcon.svg');
   }
 
+  /* custom course cards */
+  .courses{
+    @apply flex flex-wrap justify-evenly items-center gap-y-5 gap-4 py-16 mb-20;
+  }
+
+  .course-item{
+    @apply rounded-xl;
+  }
+
+  .course-front{
+    @apply bg-secondary-light flex justify-center items-center p-3 rounded-lg border-2 border-gray-300 drop-shadow-lg;
+    transition: transform .17s ease-in-out;
+  }
+  .course-front:hover{
+    @apply scale-[110%];
+  }
+
+  .course-tag{
+    @apply w-fit px-2 py-1 rounded-full text-center bg-slate-500;
+  }
+
+  .course-img{
+    @apply rounded-lg opacity-90 w-72 md:w-72 h-64 md:h-52;
+  }
+
+  .course-front-details-container{
+    @apply flex flex-col justify-between gap-y-2;
+  }
+
+  .course-grade{
+    @apply font-body text-base md:text-lg opacity-75 text-primary;
+  }
+
+  .course-name{
+    @apply font-heading text-xl font-bold text-primary opacity-90;
+  }
+
+  .course-details{
+    @apply flex flex-row justify-between items-center;
+  }
+
+  /* --- */
+
    /* custom card */
   .card-deck{
     @apply flex flex-wrap justify-center items-start mt-12 gap-8;
   }
 
   .card{
-  @apply flex flex-col drop-shadow-lg bg-gray-50 p-5 rounded space-y-5 max-w-[18rem];
+  @apply flex flex-col drop-shadow-lg bg-secondary-light p-5 rounded space-y-5 max-w-[18rem];
   }
 
   .card-img {
@@ -58,7 +102,6 @@
   .container-lg{
     max-width: 1024px;
   }
-
 
   .container-xl{
     max-width: 1280px;

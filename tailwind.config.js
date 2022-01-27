@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'heading': ['Ubuntu', 'Roboto', 'sans-serif'],
-        'body': ['Oxygen', 'Fira Sans', 'sans-serif']
+        'body': ['Fira Sans', 'Oxygen', 'sans-serif']
        },
 
        colors: {
@@ -16,8 +16,12 @@ module.exports = {
 
          secondary: {
            light: '#FFFFFF',
-           DEFAULT: '#F8F8F8',
+           DEFAULT: '#F1F1F1',
            dark: '#C4C4C4'
+         },
+
+         mathGreen: {
+            DEFAULT: '#2ecc71'
          }
        }       
     },

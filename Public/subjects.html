@@ -37,17 +37,20 @@
     <!-- Jquery -->
     <script src="./js/jquery/jquery-3.6.0.min.js"></script>
 
-    <!-- hotdognav code -->
-    <script src="./js/custom/hotdognavicon.js"></script>
-
     <!-- iconify -->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
+    <!-- hotdognav code -->
+    <script src="./js/custom/hotdognavicon.js"></script>
 
-    
+    <!-- load courses -->
+    <script src="./js/custom/courses.js"></script>
+
+
+
     <!-- Navigation bar -->
     <nav
-        class="container-2xl w-full bg-secondary-light sticky top-0 font-heading grid gap-3 grid-cols-2 lg:flex flex-col lg:flex-row items-center justify-between text-lg capitalize z-50 mx-auto">
+        class="container-2xl w-full bg-secondary sticky top-0 font-heading grid gap-3 grid-cols-2 lg:flex flex-col lg:flex-row items-center justify-between text-lg capitalize z-50 mx-auto">
 
         <!-- School logo -->
         <div class="flex flex-row justify-start items-center font-medium mt-3 mb-3 ml-3">
@@ -115,7 +118,7 @@
 
         <!-- Navgiations links -->
         <div id="navigationlinks"
-            class="lg:h-full font-medium gap-3 flex flex-col my-4 md:my-0 lg:flex lg:flex-row justify-end lg:items-center col-span-2 p-3 h-0 hidden bg-blue-700">
+            class="lg:h-full font-medium gap-3 flex flex-col my-4 md:my-0 lg:flex lg:flex-row justify-end lg:items-center col-span-2 p-3 h-0 hidden">
             <a href="index.html" target="_blank"
                 class="w-max transition-all duration-75 opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">Home</a>
             <a href="about.html" target="_blank"
@@ -130,7 +133,66 @@
     </nav>
 
     <main>
+        <section id="page-heading">
+            <div class="container-lg mx-auto px-5 divide-y-2 divide-primary-light">
+                <div class="mt-32 mb-8 md:mt-24">
+                    <h1 class="font-heading text-4xl md:text-5xl font-medium opacity-90">
+                        Our Subjects
+                    </h1>
+                </div>
 
+                <div class="courses">
+                    <!-- content dynamically loaded -->  
+                    
+                    <!-- course items renderer za-->
+                    <div class="course-item hidden">
+                        <div class="course-front">
+                            <div class="course-indicator"></div>
+            
+                            <div class="course-front-details-container">
+                                <img src='' class="course-img"></img>
+                                <div class="course-details">
+                                    <div>
+                                        <p class="course-name">
+                                        </p>
+                                        <p class="course-grade">
+                                        </p>
+                                    </div>
+            
+                                    <span class="iconify inline course-info-icon" data-icon="ic:sharp-info"></span>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="course-back">
+                            <div class="course-passmark">
+                                <div class="passmark-container">
+                                    <p class="passmark">
+                                    </p>
+                                </div>
+            
+                                <div class="font-heading font-medium text-xl text-primary w-fit opacity-95">
+                                </div>
+                            </div>
+            
+                            <div class="course-desc">
+                            </div>
+            
+                            <div class="course-tag">
+                                <div class="w-fit p-[0.30rem] pr-7 pl-3 text-center rounded-r-full bg-slate-500">
+                                    <p class="font-body text-primary text-md font-bold">
+                                    </p>
+                                </div>
+            
+                                <div class="course-close">
+                                    <span class="iconify" data-icon="ep:circle-close-filled"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </section>
     </main>
 
     <!--footer -->
