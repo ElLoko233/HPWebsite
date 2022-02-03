@@ -162,4 +162,11 @@ nav .active{
   @apply  p-5 md:p-10;
 }
 
-
+/*
+#Hero{
+  background-image: linear-gradient(rgba(241, 241, 241, .6), rgba(241, 241, 241, .6)), url('../../assets/images/7.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @apply  p-3 md:p-3 mb-10;
+} */
