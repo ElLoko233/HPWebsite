@@ -99,6 +99,13 @@ $(document).ready(()=>{
             course_grade: '8 - 9',
             course_state: "Compulsory",
         },
+        
+        {
+            course_name: "EGD",
+            course_img: "./assets/images/7.jpeg",
+            course_grade: '10 - 12',
+            course_state: "Choice subject",
+        },
     ];
 
     // getting the courses container

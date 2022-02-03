@@ -46,14 +46,12 @@
     <!-- load courses -->
     <script src="./js/custom/courses.js"></script>
 
-
-
     <!-- Navigation bar -->
     <nav
-        class="container-2xl w-full bg-secondary sticky top-0 font-heading grid gap-3 grid-cols-2 lg:flex flex-col lg:flex-row items-center justify-between text-lg capitalize z-50 mx-auto">
+        class="container-2xl w-full bg-secondary sticky top-0 font-heading grid gap-3 grid-cols-2 lg:flex flex-col lg:flex-row items-center justify-between text-lg capitalize z-40 mx-auto">
 
         <!-- School logo -->
-        <div class="flex flex-row justify-start items-center font-medium mt-3 mb-3 ml-3">
+        <div class="flex flex-row justify-start items-center font-medium mt-3 mb-3 ml-3 w-full">
             <a href="index.html">
                 <img class="w-12 md:w-14 pr-2" src="./assets/svg/SHPS_logo.svg"
                     alt="Sunward High Performance School Badge">
@@ -113,22 +111,23 @@
                         </g>
                     </g>
                 </svg>
+
             </div>
         </button>
 
         <!-- Navgiations links -->
         <div id="navigationlinks"
-            class="lg:h-full font-medium gap-3 flex flex-col my-4 md:my-0 lg:flex lg:flex-row justify-end lg:items-center col-span-2 p-3 h-0 hidden">
-            <a href="index.html" target="_blank"
-                class="w-max transition-all duration-75 opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">Home</a>
+            class="bg-secondary font-medium gap-6 lg:gap-3 flex flex-col my-4 md:my-0 lg:flex lg:flex-row lg:justify-end items-center col-span-2 pt-32 lg:p-3 w-full h-0 lg:h-full z-50 left-0 top-12 fixed lg:static hidden overflow-hidden">
+            <a href="index.html?#"
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90" target="_blank">Home</a>
             <a href="about.html" target="_blank"
-                class="w-max transition-all duration-75 opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">About</a>
-            <a href="subjects.html?#"
-                class="w-max transition-all duration-75 opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90 active">subjects</a>
-            <a href="index.html?#enrol-criteria" target="_blank"
-                class="w-max transition-all duration-75 opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">Criteria</a>
-            <a href="index.html?#location" target="_blank"
-                class="w-max transition-all duration-75 opacity-70 hover:border-b-2 hover:border-primary hover:opacity-90">ContactUs</a>
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90" target="_blank">About</a>
+            <a href="subjects.html"
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90 active">subjects</a>
+            <a href="index.html?#enrol-criteria"
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90" target="_blank">Criteria</a>
+            <a href="index.html?#location"
+                class="w-max opacity-70 hover:border-b-2 transition-all duration-75 hover:border-primary hover:opacity-90" target="_blank">ContactUs</a>
         </div>
     </nav>
 
@@ -142,13 +141,13 @@
                 </div>
 
                 <div class="courses">
-                    <!-- content dynamically loaded -->  
-                    
+                    <!-- content dynamically loaded -->
+
                     <!-- course items renderer za-->
                     <div class="course-item hidden">
                         <div class="course-front">
                             <div class="course-indicator"></div>
-            
+
                             <div class="course-front-details-container">
                                 <img src='' class="course-img"></img>
                                 <div class="course-details">
@@ -158,38 +157,38 @@
                                         <p class="course-grade">
                                         </p>
                                     </div>
-            
+
                                     <span class="iconify inline course-info-icon" data-icon="ic:sharp-info"></span>
                                 </div>
                             </div>
                         </div>
-            
+
                         <div class="course-back">
                             <div class="course-passmark">
                                 <div class="passmark-container">
                                     <p class="passmark">
                                     </p>
                                 </div>
-            
+
                                 <div class="font-heading font-medium text-xl text-primary w-fit opacity-95">
                                 </div>
                             </div>
-            
+
                             <div class="course-desc">
                             </div>
-            
+
                             <div class="course-tag">
                                 <div class="w-fit p-[0.30rem] pr-7 pl-3 text-center rounded-r-full bg-slate-500">
                                     <p class="font-body text-primary text-md font-bold">
                                     </p>
                                 </div>
-            
+
                                 <div class="course-close">
                                     <span class="iconify" data-icon="ep:circle-close-filled"></span>
                                 </div>
                             </div>
                         </div>
-                    </div>               
+                    </div>
                 </div>
             </div>
         </section>
@@ -232,7 +231,7 @@
             </div>
         </div>
         <div class="font-body text-center text-secondary">
-            &copy All Rights Reserved 2021
+            &copy All Rights Reserved 2022
         </div>
     </footer>
 </body>
