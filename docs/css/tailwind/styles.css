@@ -563,20 +563,10 @@ html {
 }
 
 .course-img {
-  height: 16rem;
+  height: 13rem;
   width: 18rem;
   border-radius: 0.5rem;
   opacity: 0.9;
-}
-
-@media (min-width: 768px) {
-  .course-img {
-    height: 13rem;
-  }
-
-  .course-img {
-    width: 18rem;
-  }
 }
 
 .course-front-details-container {
