@@ -34,3 +34,15 @@ const setHeightFull = () => {
         $("#navigationlinks").css('height', "100%");
     }
 };
+
+// clsoing navbar when url
+$(window).on('hashchange', function(e){
+    if((!$("#navigationlinks").hasClass('h-0 hidden') && $("#navigation-toggler").hasClass('opened'))){
+        // turning off #navigation-toggler visible state
+        $("#navigation-toggler").toggleClass('opened');
+
+        // turning off #navigationlinks visible state
+        $("#navigationlinks").toggleClass('h-0 hidden');
+        setHeightFull();
+    }
+});

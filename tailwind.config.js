@@ -4,7 +4,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'heading': ['Ubuntu', 'Roboto', 'sans-serif'],
-        'body': ['Fira Sans', 'Oxygen', 'sans-serif']
+        'body': ['Fira Sans', 'Oxygen', 'sans-serif'],
+        'matric': ['UnifrakturCook', 'cursive']
        },
 
        colors: {
