@@ -171,11 +171,3 @@ nav .active{
   background-position: center center;
   @apply  p-3 md:p-3 mb-10;
 } */
-
-#matric-results .matriculants .matriculant{
-  transform-origin: center;
-  transform-style: preserve-3d;
-  transition-property: transform;
-  transition-duration: 0.8s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-}
